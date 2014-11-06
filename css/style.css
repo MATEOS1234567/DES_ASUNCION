@@ -1,0 +1,152 @@
+
+
+body{
+	background: #26b9ff;
+}
+
+.caja{
+	width: 400px;
+	border-radius: 25px;
+	box-shadow: 0px 5px 20px  #7f7f7f;
+	margin: 80px auto;
+}
+
+button[type="submit"]{
+	margin-top: 10px;
+	margin-left: 100px
+
+}
+
+label{
+	margin-top: 10px;
+}
+
+
+}
+
+.boton{
+	width: 100%;
+	height: 80px;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.Caja
+{
+	float: left;
+	height: 280px;
+	margin: 5px;
+	padding: 20px;
+	width: 280px;
+		
+}
+
+.Caja1, .Caja6
+{
+	background-color: #6dad3c;
+}
+
+.Caja1 ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin: 2px;
+	padding: 4px;
+}
+
+.Caja1 ul li a:hover{
+	font-size: 20px;
+}
+
+.Caja2
+{
+	background-color: #d4762f;
+}
+
+.Caja2 ul li a:hover{
+	font-size: 20px;
+}
+
+.Caja2 ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin: 2px;
+	padding: 4px;
+}
+
+
+
+
+.Caja3, .Caja5
+{
+	background-color: #d43742;
+}
+
+.Caja3 table{
+	margin: 10px auto;
+	width: 100%;
+}
+
+.Caja3  table th{
+	text-align: center;
+	border-bottom: 1px solid #d6dfd5;
+}
+
+.Caja3 table td{
+	text-align: center;
+}
+
+
+.Caja7 {
+	background-color: #a29e9e
+}
+
+.Caja7 h2{
+
+
+	font-size: 30pt;
+	font-style: italic;
+	text-align: right;
+}
+.Caja7 img{
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.Caja5 table{
+	margin: 10px auto;
+	width: 100%;
+}
+
+.Caja5  table th{
+	text-align: center;
+	border-bottom: 1px solid #d6dfd5;
+}
+
+.Caja5 table td{
+	text-align: center;
+}
+
+
+
+
+.doble{
+	width: 610px;
+	height: 280px;
+	margin: 5px;
+	padding: 20px;
+	float: left;
+}
+
+
+h1,h2,h3,h4
+{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	text-align: center;
+}
+

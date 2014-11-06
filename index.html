@@ -1,0 +1,64 @@
+<?php 
+  require('inc/conexion.php');
+  $consulta= "SELECT * FROM producto";
+  $resultado=$mysqli->query($consulta); 
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio Bases de datos PHP MySql</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">	
+  </head>
+  <body>
+    <h1>Lista de usuarios</h1>
+    <h3><a data-toggle="modal" href="#frmingresar">Agregar nuevo usuario</a></h3>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+      <?php while ($fila=$resultado->fetch_assoc()){ ?>
+        <tr>
+          <td><?php echo $fila['id']; ?></td>
+          <td><?php echo $fila['nombre']; ?></td>
+          <td><?php echo $fila['correo']; ?></td>
+          <td><a href="">Modificar</a> | <a href="inc/eliminar.php?id=<?php echo $fila['id']; ?>">Eliminar</a></td>
+        </tr>
+      <?php } ?>  
+      </tbody>
+    </table>
+    <div class="modal fase"id="frmingresar">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" >Igresar registro de ususarios</h4>
+          </div>
+          <div class="modal-body">
+            <form action="inc/nuevo.php" method="POST" name="nuevousuario">
+            <input type="text" name="nombre" placeholder="ingrese nombre"/>
+            <input type="text" name="correo" placeholder="ingrese el correo"/>
+            <button type="submit">Guardar registro</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal">Cerrar ventana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script> 	
+    
+  </body>
+</html>
